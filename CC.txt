@@ -1,0 +1,15 @@
+Objects
+=======
+
+1. Employee
+2. Payslip
+
+[Rules] Tax Rules
+
+Operations
+==========
+
+ReadInputFile and create Employee object
+Create tax rule
+Compute tax and create Payslip object
+Write Payslips to output/file
