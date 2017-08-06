@@ -5,9 +5,9 @@ import java.util.List;
 import com.au.myob.vo.Employee;
 import com.au.myob.vo.Payslip;
 
-public interface IPaySlipGenerator {
+public interface IGeneratePaySlip {
 	
-    public void readInputFile(String fileName);
+    public void readInputFile(String employeeFileName, String rulesFileName);
     
     public void loadTaxComputationRules();
     

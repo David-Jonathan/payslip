@@ -3,7 +3,7 @@ package com.au.myob.vo;
 public class Employee {
 
 	private String firstName;
-	private String lasttName;
+	private String lastName;
 	private double annaulSalary;
 	private String superRate;
 	private String stateDate;
@@ -16,12 +16,12 @@ public class Employee {
 		this.firstName = firstName;
 	}
 
-	public String getLasttName() {
-		return lasttName;
+	public String getLastName() {
+		return lastName;
 	}
 
-	public void setLasttName(String lasttName) {
-		this.lasttName = lasttName;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 
 	public double getAnnaulSalary() {
