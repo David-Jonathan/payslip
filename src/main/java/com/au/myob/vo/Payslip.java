@@ -4,9 +4,9 @@ public class Payslip {
 	
 	String fullName;
 	String payPeriod;
-	double grossIncome;
+	int grossIncome;
 	int incomeTax;
-	double netIncome;
+	int netIncome;
 	int sprAnnuation;
 	
 	public String getFullName() {
@@ -21,10 +21,10 @@ public class Payslip {
 	public void setPayPeriod(String payPeriod) {
 		this.payPeriod = payPeriod;
 	}
-	public double getGrossIncome() {
+	public int getGrossIncome() {
 		return grossIncome;
 	}
-	public void setGrossIncome(double grossIncome) {
+	public void setGrossIncome(int grossIncome) {
 		this.grossIncome = grossIncome;
 	}
 	public int getIncomeTax() {
@@ -36,7 +36,7 @@ public class Payslip {
 	public double getNetIncome() {
 		return netIncome;
 	}
-	public void setNetIncome(double netIncome) {
+	public void setNetIncome(int netIncome) {
 		this.netIncome = netIncome;
 	}
 	public int getSprAnnuation() {
@@ -46,6 +46,4 @@ public class Payslip {
 		this.sprAnnuation = sprAnnuation;
 	}
 	
-	
-
 }

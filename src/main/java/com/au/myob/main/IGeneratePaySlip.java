@@ -7,12 +7,10 @@ import com.au.myob.vo.Payslip;
 
 public interface IGeneratePaySlip {
 	
-    public void readInputFile(String employeeFileName, String rulesFileName);
+    public List<Employee> readInputFile(String employeeFileName);
     
-    public void loadTaxComputationRules();
+    public List<Payslip> computeTaxAndCreatePaySlip(List<Employee> employees, String _rulesFileName);
     
-    public void computeTax(List<Employee> employees);
-    
-    public void printPaySlips(List<Payslip> payslips);
+    public void printPaySlips(List<Payslip> payslips, String outputFileName);
 
 }

@@ -4,7 +4,7 @@ public class Employee {
 
 	private String firstName;
 	private String lastName;
-	private double annaulSalary;
+	private int annaulSalary;
 	private String superRate;
 	private String stateDate;
 
@@ -24,11 +24,11 @@ public class Employee {
 		this.lastName = lastName;
 	}
 
-	public double getAnnaulSalary() {
+	public int getAnnaulSalary() {
 		return annaulSalary;
 	}
 
-	public void setAnnaulSalary(double annaulSalary) {
+	public void setAnnaulSalary(int annaulSalary) {
 		this.annaulSalary = annaulSalary;
 	}
 

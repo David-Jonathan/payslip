@@ -1,17 +1,18 @@
 package com.au.myob.main;
 
+import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Assert;
+import org.junit.Test;
 
+import com.au.myob.client.PaySlipGenerator;
 import com.au.myob.vo.Employee;
 import com.au.myob.vo.Payslip;
 
-import junit.framework.Test;
-import junit.framework.TestSuite;
-
 /**
- * Unit test for simple PaySlipGenerator.
+ * Unit test for simple GeneratePaySlip.
  */
 public class PaySlipGeneratorTest 
 {
@@ -20,46 +21,62 @@ public class PaySlipGeneratorTest
      *
      * @param testName name of the test case
      */
-    public void testCreateEmployeeObject_validInputCSVFile( String fileName )
+	@Test
+    public void testCreateEmployeeObject_validInputCSVFile()
     {
-    	PaySlipGenerator paySlipGenerator = PaySlipGenerator.getPaySlipGenerator();
-        paySlipGenerator.readInputFile(fileName);
+		String fileName = "input_employees.csv";
+    	GeneratePaySlip generatePaySlip = new GeneratePaySlip();
+    	List<Employee> employees = generatePaySlip.readInputFile(fileName);
         
-        List<Employee> employees = PaySlipGenerator.getPaySlipGenerator().getEmployees();
-        
-        Assert.assertNotNull(employees);
-    }
-
-
-    public void testTaxComputationRules() {
-    	PaySlipGenerator paySlipGenerator = PaySlipGenerator.getPaySlipGenerator();
-    	paySlipGenerator.loadTaxComputationRules();
-    	
-    	List<Employee> employees = paySlipGenerator.getEmployees();
-    	
     	Assert.assertNotNull(employees);
     }
-    
-    public void testComputeTax_validInputEmployeeObjects(List<Employee> employees) {
-    	PaySlipGenerator paySlipGenerator = PaySlipGenerator.getPaySlipGenerator();
-    	paySlipGenerator.computeTax(employees);
-    	
-    	List<Payslip> payslips = paySlipGenerator.getPayslips();
+
+	@Test
+    public void testComputeTax_validInputEmployeeObjects() {
+		String fileName = "input_employees.csv";
+    	GeneratePaySlip generatePaySlip = new GeneratePaySlip();
+    	List<Employee> employees = generatePaySlip.readInputFile(fileName);
+
+    	String rulesFile = "taxcalculation.csv";
+    	List<Payslip> payslips = generatePaySlip.computeTaxAndCreatePaySlip(employees, rulesFile);
     	
     	Assert.assertNotNull(payslips);
     }
     
-    public void testPrintPaySlips(List<Payslip> payslips) {
-    	PaySlipGenerator paySlipGenerator = PaySlipGenerator.getPaySlipGenerator();
-    	paySlipGenerator.printPaySlips(payslips);
+	@Test
+    public void testPrintPaySlips() {
+    	GeneratePaySlip generatePaySlip = new GeneratePaySlip();
+    	List<Payslip> payslips = new ArrayList<Payslip>();
+    	String outputFileName = "payslip_output.csv";
+
+    	generatePaySlip.printPaySlips(payslips, outputFileName);
+    	
+    	Assert.assertNotNull(new File(outputFileName));
     }
     
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( PaySlipGeneratorTest.class );
+	@Test
+    public void testPrintPaySlips_with_paySlipObject_asNull() {
+    	GeneratePaySlip generatePaySlip = new GeneratePaySlip();
+    	String outputFileName = "payslip_output.csv";
+    	
+    	generatePaySlip.printPaySlips(null, outputFileName);
+    	
+    	Assert.assertNotNull(new File(outputFileName));
     }
 
-}
+	@Test
+    public void testPrintPaySlips_with_paySlipObject_and_outputFile_asNull() {
+    	GeneratePaySlip generatePaySlip = new GeneratePaySlip();
+    	String outputFileName = "_payslip_output.csv";
+    	
+    	generatePaySlip.printPaySlips(null, outputFileName);
+    	
+    }
+	@Test
+    public void testPaySlipGenerator_client() {
+    	PaySlipGenerator paySlipGenerator = new PaySlipGenerator();
+    	
+    	paySlipGenerator.main(null);
+    }
+    
+ }

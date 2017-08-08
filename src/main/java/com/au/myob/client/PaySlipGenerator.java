@@ -1,21 +1,26 @@
 package com.au.myob.client;
 
+import java.util.List;
+
 import com.au.myob.main.GeneratePaySlip;
+import com.au.myob.vo.Employee;
+import com.au.myob.vo.Payslip;
 
 public class PaySlipGenerator {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		GeneratePaySlip paySlipGen = GeneratePaySlip.getPaySlipGenerator();
+		GeneratePaySlip paySlipGen = new GeneratePaySlip();
 		
-		String employeesFileName = "C:/Users/Immanuel/Documents/Silas_Files/Code_Test/input_employees.csv";
-		String rulesFileName = "C:/Users/Immanuel/Documents/Silas_Files/Code_Test/taxcalculation.csv";
+		String employeesFileName = "input_employees.csv";
+		String rulesFileName = "taxcalculation.csv";
+		String outputFileName = "payslip_output.csv";
 		
-		paySlipGen.readInputFile(employeesFileName, rulesFileName);
+		List<Employee> employees = paySlipGen.readInputFile(employeesFileName);
 		
-		System.out.println(paySlipGen.getEmployees().size());
+		List<Payslip> payslips = paySlipGen.computeTaxAndCreatePaySlip(employees, rulesFileName);
 		
-		paySlipGen.computeTax(paySlipGen.getEmployees());
+		paySlipGen.printPaySlips(payslips, outputFileName);
 
 	}
 
