@@ -1,4 +1,4 @@
-package com.au.myob.main;
+package com.au.myob.payslip.main;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -7,9 +7,10 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.au.myob.client.PaySlipGenerator;
-import com.au.myob.vo.Employee;
-import com.au.myob.vo.Payslip;
+import com.au.myob.payslip.client.PaySlipGenerator;
+import com.au.myob.payslip.main.GeneratePaySlip;
+import com.au.myob.payslip.vo.Employee;
+import com.au.myob.payslip.vo.Payslip;
 
 /**
  * Unit test for simple GeneratePaySlip.

@@ -1,4 +1,4 @@
-package com.au.myob.vo;
+package com.au.myob.payslip.vo;
 
 public class Employee {
 

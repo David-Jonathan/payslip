@@ -1,9 +1,9 @@
-package com.au.myob.main;
+package com.au.myob.payslip.main;
 
 import java.util.List;
 
-import com.au.myob.vo.Employee;
-import com.au.myob.vo.Payslip;
+import com.au.myob.payslip.vo.Employee;
+import com.au.myob.payslip.vo.Payslip;
 
 public interface IGeneratePaySlip {
 	
