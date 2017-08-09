@@ -1,0 +1,253 @@
+2017-08-09 21:38:47 INFO  GeneratePaySlip:136 - CSV file was created successfully !!!
+2017-08-09 21:38:47 INFO  PaySlipGenerator:41 - 3
+2017-08-09 22:48:40 INFO  GeneratePaySlip:158 - Payslip CSV File created successfully.
+2017-08-09 22:48:40 INFO  GeneratePaySlip:158 - Payslip CSV File created successfully.
+2017-08-09 22:48:40 ERROR GeneratePaySlip:160 - Error while creating payslip CSV file.
+2017-08-09 22:48:40 ERROR GeneratePaySlip:160 - Error while creating payslip CSV file.
+2017-08-09 22:49:14 INFO  GeneratePaySlip:158 - Payslip CSV File created successfully.
+2017-08-09 22:49:14 INFO  GeneratePaySlip:158 - Payslip CSV File created successfully.
+2017-08-09 22:49:14 ERROR GeneratePaySlip:160 - Error while creating payslip CSV file.
+2017-08-09 22:49:14 ERROR GeneratePaySlip:160 - Error while creating payslip CSV file.
+2017-08-09 22:51:58 INFO  GeneratePaySlip:158 - Payslip CSV File created successfully.
+2017-08-09 22:51:58 INFO  GeneratePaySlip:158 - Payslip CSV File created successfully.
+2017-08-09 22:51:58 ERROR GeneratePaySlip:160 - Error while creating payslip CSV file.
+2017-08-09 22:51:58 ERROR GeneratePaySlip:160 - Error while creating payslip CSV file.
+2017-08-09 22:52:20 INFO  GeneratePaySlip:158 - Payslip CSV File created successfully.
+2017-08-09 22:52:20 INFO  GeneratePaySlip:158 - Payslip CSV File created successfully.
+2017-08-09 22:52:20 ERROR GeneratePaySlip:160 - Error while creating payslip CSV file.
+2017-08-09 22:52:20 ERROR GeneratePaySlip:160 - Error while creating payslip CSV file.
+2017-08-09 22:53:04 INFO  GeneratePaySlip:158 - Payslip CSV File created successfully.
+2017-08-09 22:53:04 INFO  GeneratePaySlip:158 - Payslip CSV File created successfully.
+2017-08-09 22:53:04 ERROR GeneratePaySlip:160 - Error while creating payslip CSV file.
+2017-08-09 22:53:04 ERROR GeneratePaySlip:160 - Error while creating payslip CSV file.
+2017-08-09 22:57:41 INFO  GeneratePaySlip:158 - Payslip CSV File created successfully.
+2017-08-09 22:57:41 INFO  GeneratePaySlip:158 - Payslip CSV File created successfully.
+2017-08-09 22:57:41 ERROR GeneratePaySlip:160 - Error while creating payslip CSV file.
+2017-08-09 22:57:41 ERROR GeneratePaySlip:160 - Error while creating payslip CSV file.
+2017-08-09 22:59:22 INFO  GeneratePaySlip:162 - Payslip CSV File created successfully.
+2017-08-09 22:59:22 INFO  GeneratePaySlip:162 - Payslip CSV File created successfully.
+2017-08-09 22:59:22 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-09 22:59:22 ERROR GeneratePaySlip:164 - Error while creating payslip CSV file.
+2017-08-09 22:59:22 ERROR GeneratePaySlip:164 - Error while creating payslip CSV file.
+2017-08-09 23:02:49 INFO  GeneratePaySlip:162 - Payslip CSV File created successfully.
+2017-08-09 23:02:49 INFO  GeneratePaySlip:162 - Payslip CSV File created successfully.
+2017-08-09 23:02:49 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-09 23:02:49 ERROR GeneratePaySlip:164 - Error while creating payslip CSV file.
+2017-08-09 23:02:49 ERROR GeneratePaySlip:164 - Error while creating payslip CSV file.
+2017-08-09 23:05:38 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:05:38 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:05:38 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-09 23:05:38 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:05:38 ERROR GeneratePaySlip:129 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:05:38 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:06:21 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:06:21 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:06:21 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-09 23:06:21 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:06:21 ERROR GeneratePaySlip:129 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:06:21 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:08:49 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:08:49 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:08:49 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-09 23:08:49 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-09 23:08:49 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:08:49 ERROR GeneratePaySlip:129 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:08:49 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:09:55 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:09:55 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:09:55 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-09 23:09:55 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-09 23:09:55 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:09:55 ERROR GeneratePaySlip:129 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:09:55 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:14:36 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:14:36 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:14:36 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-09 23:14:36 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-09 23:14:36 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:14:36 ERROR GeneratePaySlip:129 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:14:36 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:16:04 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:16:04 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:16:04 ERROR GeneratePaySlip:134 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:16:04 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-09 23:16:05 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:16:05 ERROR GeneratePaySlip:129 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:16:05 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:18:01 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:18:01 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:18:01 ERROR GeneratePaySlip:134 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:18:01 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-09 23:18:01 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:18:01 ERROR GeneratePaySlip:129 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:18:01 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:21:49 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:21:49 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:21:49 ERROR GeneratePaySlip:134 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:21:49 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-09 23:21:49 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:21:49 ERROR GeneratePaySlip:129 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:24:01 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:24:01 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:24:01 ERROR GeneratePaySlip:134 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:24:01 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-09 23:24:01 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-09 23:24:01 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:24:01 ERROR GeneratePaySlip:129 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:27:22 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:38:40 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:38:40 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:38:40 ERROR GeneratePaySlip:134 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:38:40 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-09 23:38:40 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-09 23:38:40 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:38:40 ERROR GeneratePaySlip:129 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:42:47 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:42:47 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:42:47 ERROR GeneratePaySlip:134 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:42:47 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-09 23:42:47 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-09 23:42:47 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:42:47 ERROR GeneratePaySlip:129 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:44:15 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:44:15 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:44:15 ERROR GeneratePaySlip:134 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:44:15 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-09 23:44:15 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-09 23:44:15 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:44:15 ERROR GeneratePaySlip:129 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:45:51 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:45:51 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:45:51 ERROR GeneratePaySlip:134 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:45:51 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-09 23:45:51 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:45:51 ERROR GeneratePaySlip:129 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:47:24 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:47:24 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:47:24 ERROR GeneratePaySlip:134 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:47:24 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-09 23:47:24 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-09 23:47:24 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:47:24 ERROR GeneratePaySlip:129 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:53:06 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:53:31 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:53:31 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:53:31 ERROR GeneratePaySlip:134 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:53:31 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-09 23:53:31 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-09 23:53:31 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:53:31 ERROR GeneratePaySlip:129 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:59:41 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:59:41 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-09 23:59:41 ERROR GeneratePaySlip:134 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-09 23:59:41 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-09 23:59:41 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-09 23:59:41 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-09 23:59:41 ERROR PaySlipGenerator:68 - Error while reading Employee details from CSV file
+2017-08-09 23:59:41 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-09 23:59:41 ERROR GeneratePaySlip:129 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-10 00:07:52 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-10 00:07:52 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-10 00:07:52 INFO  GeneratePaySlip:166 - Payslip CSV File created successfully.
+2017-08-10 00:07:52 ERROR GeneratePaySlip:134 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-10 00:07:52 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-10 00:07:52 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-10 00:07:52 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-10 00:07:52 ERROR PaySlipGenerator:67 - Error while reading Employee details from CSV file
+2017-08-10 00:07:52 ERROR GeneratePaySlip:168 - Error while creating payslip CSV file.
+2017-08-10 00:07:52 ERROR GeneratePaySlip:129 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-10 00:12:02 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:12:02 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:12:02 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:12:02 ERROR GeneratePaySlip:133 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-10 00:12:02 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-10 00:12:02 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-10 00:12:02 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-10 00:12:02 ERROR PaySlipGenerator:67 - Error while reading Employee details from CSV file
+2017-08-10 00:12:02 ERROR GeneratePaySlip:167 - Error while creating payslip CSV file.
+2017-08-10 00:12:02 ERROR GeneratePaySlip:128 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-10 00:15:37 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:15:37 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:15:37 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:15:37 ERROR GeneratePaySlip:133 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-10 00:15:37 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-10 00:15:37 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-10 00:15:37 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-10 00:15:37 ERROR PaySlipGenerator:67 - Error while reading Employee details from CSV file
+2017-08-10 00:15:37 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:15:37 ERROR GeneratePaySlip:167 - Error while creating payslip CSV file.
+2017-08-10 00:15:37 ERROR GeneratePaySlip:128 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-10 00:16:41 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:16:41 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:16:41 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:16:41 ERROR GeneratePaySlip:133 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-10 00:16:41 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-10 00:16:41 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-10 00:16:41 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-10 00:16:41 ERROR PaySlipGenerator:67 - Error while reading Employee details from CSV file
+2017-08-10 00:16:41 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:16:41 ERROR GeneratePaySlip:167 - Error while creating payslip CSV file.
+2017-08-10 00:16:41 ERROR GeneratePaySlip:128 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-10 00:33:56 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:34:36 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:34:36 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:34:36 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:34:36 ERROR GeneratePaySlip:133 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-10 00:34:36 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-10 00:34:36 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-10 00:34:36 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-10 00:34:36 ERROR PaySlipGenerator:68 - Error while reading Employee details from CSV file
+2017-08-10 00:34:36 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:34:36 ERROR GeneratePaySlip:167 - Error while creating payslip CSV file.
+2017-08-10 00:34:36 ERROR GeneratePaySlip:128 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-10 00:36:31 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:36:31 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:36:31 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:36:31 ERROR GeneratePaySlip:133 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-10 00:36:31 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-10 00:36:31 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-10 00:36:31 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-10 00:36:31 ERROR PaySlipGenerator:68 - Error while reading Employee details from CSV file
+2017-08-10 00:36:31 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:36:31 ERROR GeneratePaySlip:167 - Error while creating payslip CSV file.
+2017-08-10 00:36:31 ERROR GeneratePaySlip:128 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-10 00:37:09 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:37:32 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:38:41 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:38:41 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:38:41 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:38:41 ERROR GeneratePaySlip:133 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-10 00:38:41 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-10 00:38:41 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-10 00:38:41 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-10 00:38:41 ERROR PaySlipGenerator:69 - Error while reading Employee details from CSV file
+2017-08-10 00:38:41 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:38:41 ERROR GeneratePaySlip:167 - Error while creating payslip CSV file.
+2017-08-10 00:38:41 ERROR GeneratePaySlip:128 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-10 00:39:02 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:41:55 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:41:55 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:41:55 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:41:55 ERROR GeneratePaySlip:133 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-10 00:41:55 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-10 00:41:55 ERROR GeneratePaySlip:63 - Error while reading Employee details from CSV file
+2017-08-10 00:41:55 ERROR GeneratePaySlip:67 - Error while reading Employee details from CSV file
+2017-08-10 00:41:55 ERROR PaySlipGenerator:68 - Error while reading Employee details from CSV file
+2017-08-10 00:41:55 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:41:55 ERROR GeneratePaySlip:167 - Error while creating payslip CSV file.
+2017-08-10 00:41:55 ERROR GeneratePaySlip:128 - Error while computing the tax (or) while creating the payslip objects after computing the tax
+2017-08-10 00:43:53 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:44:19 INFO  GeneratePaySlip:165 - Payslip CSV File created successfully.
+2017-08-10 00:48:28 INFO  GeneratePaySlip:161 - Payslip CSV File created successfully.
+2017-08-10 00:48:28 INFO  GeneratePaySlip:161 - Payslip CSV File created successfully.
+2017-08-10 00:48:28 INFO  GeneratePaySlip:161 - Payslip CSV File created successfully.
+2017-08-10 00:48:28 ERROR PaySlipGenerator:68 - Error while reading Employee details from CSV file. 
+Please ensure the input files(employees.csv & taxrules.csv) and the jar file are in the same folder.
+2017-08-10 00:48:28 INFO  GeneratePaySlip:161 - Payslip CSV File created successfully.
+2017-08-10 00:51:07 INFO  GeneratePaySlip:161 - Payslip CSV File created successfully.
+2017-08-10 00:51:07 INFO  GeneratePaySlip:161 - Payslip CSV File created successfully.
+2017-08-10 00:51:07 INFO  GeneratePaySlip:161 - Payslip CSV File created successfully.
+2017-08-10 00:51:07 ERROR PaySlipGenerator:68 - Error while reading Employee details from CSV file. 
+Please ensure the input files(employees.csv & taxrules.csv) and the jar file are in the path where this command is being executed.
+2017-08-10 00:51:07 INFO  GeneratePaySlip:161 - Payslip CSV File created successfully.
+2017-08-10 00:51:58 INFO  GeneratePaySlip:161 - Payslip CSV File created successfully.

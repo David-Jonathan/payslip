@@ -13,14 +13,25 @@ import java.util.stream.Stream;
 
 import org.apache.log4j.Logger;
 
+import com.au.myob.payslip.exceptions.InvalidInputDataException;
+import com.au.myob.payslip.exceptions.PayslipOutputWriterException;
+import com.au.myob.payslip.util.GeneratePaySlipEnum;
 import com.au.myob.payslip.vo.Employee;
 import com.au.myob.payslip.vo.Payslip;
 import com.au.myob.payslip.vo.Rule;
 
 /**
- * Hello world!
+ * The main stub with implementation for the following.
+ * 
+ * 1. Reading the list of employees from the csv file
+ * 2. Creating the rules from the taxcomputation rules csv file
+ * 3. Creating the list of payslips for the employees based on the taxation rules
+ * 4. Creating the output csv file with the list of payslips
+ * 
+ * @author Silas
  *
  */
+
 public class GeneratePaySlip implements IGeneratePaySlip
 {
 	
@@ -30,13 +41,14 @@ public class GeneratePaySlip implements IGeneratePaySlip
 	private List<Rule> rules;
 	private List<Payslip> payslips;
 	
-		
-    private static final String COMMA_DELIMITER = ",";
-    private static final String NEW_LINE_SEPARATOR = "\n";
-     
-    private static final String FILE_HEADER = "name,pay period,gross income,income tax,net income,super";
-
-    public List<Employee> readInputFile(String employeeFileName) {
+	
+	/**
+	 * Method to read the csv file and create a list of Employee objects 
+	 * 
+	 * @param employeeFileName - name of the csv file with the list of employee details
+	 * @return list of Employees.
+	 */
+    public List<Employee> readInputFile(String employeeFileName) throws InvalidInputDataException {
 		try (Stream<String> lines = Files.lines(Paths.get(employeeFileName))) {
 			
 			Employee employee;
@@ -54,14 +66,26 @@ public class GeneratePaySlip implements IGeneratePaySlip
 				employees.add(employee);
 			}
 			
+		} catch (NumberFormatException nfe) {
+			throw new InvalidInputDataException(GeneratePaySlipEnum.READ_EMPLOYEE_INPUTFILE_ERROR_MESSAGE
+					.getTextValue());
 		} catch (IOException e) {
-			e.printStackTrace();
+			throw new InvalidInputDataException(GeneratePaySlipEnum.READ_EMPLOYEE_INPUTFILE_ERROR_MESSAGE
+					.getTextValue());
 		}
 		
 		return employees;
     }
     
-    public List<Payslip> computeTaxAndCreatePaySlip(List<Employee> employees, String _rulesFileName) {
+	/**
+	 * Method to calculate tax and create payslip by applying the tax rules (from taxcalculation.csv)
+	 * on the employee data 
+	 * 
+	 * @param listOfEmployees
+	 * @param - name of the csv file with the tax rules
+	 * @return list of Payslips.
+	 */
+    public List<Payslip> computeTaxAndCreatePaySlip(List<Employee> employees, String _rulesFileName) throws InvalidInputDataException {
     	
     	Rule rule;
     	Payslip payslip;
@@ -69,13 +93,16 @@ public class GeneratePaySlip implements IGeneratePaySlip
 		rules = new ArrayList<Rule>();
 		try (Stream<String> rulesLines = Files.lines(Paths.get(_rulesFileName))) {
 			
-			List<List<String>> rulesList = rulesLines.map(ruleLine -> Arrays.asList(ruleLine.split(","))).collect(Collectors.toList());
+			List<List<String>> rulesList = rulesLines.map(ruleLine 
+					-> Arrays.asList(ruleLine.split(
+							GeneratePaySlipEnum.COMMA_DELIMITER.getTextValue())))
+					.collect(Collectors.toList());
 			rulesList.remove(0);
 			
 			for(List<String> list : rulesList) {
 				rule = new Rule();
 				rule.setMinimum_salary(Integer.parseInt(list.get(0)));
-				rule.setMaximum_salary(Integer.parseInt((list.get(1) != null && list.get(1).equals(""))?new Integer(Integer.MAX_VALUE).toString():list.get(1)));
+				rule.setMaximum_salary(Integer.parseInt((list.get(1).equals(GeneratePaySlipEnum.UNDEFINED.getTextValue()))?new Integer(Integer.MAX_VALUE).toString():list.get(1)));
 				rule.setFixed_tax(Integer.parseInt(list.get(2)));
 				rule.setVariable_tax(Float.parseFloat(list.get(3)));
 				rules.add(rule);
@@ -83,70 +110,87 @@ public class GeneratePaySlip implements IGeneratePaySlip
 
 			for(Employee employee : employees) {
 				
-				   Predicate<Rule> rulePredicate = predicateCandidate -> (employee.getAnnaulSalary() >= predicateCandidate.getMinimum_salary() 
-						   && employee.getAnnaulSalary() < predicateCandidate.getMaximum_salary());
+				   Predicate<Rule> rulePredicate = 
+						   predicateCandidate -> (employee.getAnnaulSalary() >= predicateCandidate.getMinimum_salary() 
+						   	&& employee.getAnnaulSalary() < predicateCandidate.getMaximum_salary());
 				   Rule matchingRule = rules.stream().filter(rulePredicate).findFirst().get();
 				   
 				   payslip = new Payslip();
 				   int incomeTax = 0;
-				   payslip.setFullName(employee.getFirstName() + " " + employee.getLastName());
+				   payslip.setFullName(employee.getFirstName() + 
+						   GeneratePaySlipEnum.SPACE.getTextValue() + employee.getLastName());
 				   payslip.setPayPeriod(employee.getStateDate());
-				   payslip.setGrossIncome(employee.getAnnaulSalary() / 12);
+				   payslip.setGrossIncome(employee.getAnnaulSalary() / 
+						   GeneratePaySlipEnum.MONTHS.getIntValue());
 				   
-				   incomeTax = (int) ((matchingRule.getFixed_tax() + (employee.getAnnaulSalary() - matchingRule.getMinimum_salary()) * 
-						   (matchingRule.getVariable_tax() / 100)) / 12);
+				   incomeTax = 
+						   (int) ((matchingRule.getFixed_tax() + (employee.getAnnaulSalary() - 
+								   matchingRule.getMinimum_salary()) * 
+								   (matchingRule.getVariable_tax() / 
+										   GeneratePaySlipEnum.PERCENTILE.getIntValue())) / 
+								   GeneratePaySlipEnum.MONTHS.getIntValue());
 				   payslip.setIncomeTax(incomeTax);
 				   payslip.setNetIncome(payslip.getGrossIncome() - incomeTax);
-				   payslip.setSprAnnuation((int) (payslip.getGrossIncome() * (Float.parseFloat(employee.getSuperRate())/100)));
+				   payslip.setSprAnnuation((int) (payslip.getGrossIncome() * 
+						   (Float.parseFloat(employee.getSuperRate())/
+								   GeneratePaySlipEnum.PERCENTILE.getIntValue())));
 				   payslips.add(payslip);
 				   
 			}
+		} catch (NumberFormatException nfe) {
+			throw new InvalidInputDataException(GeneratePaySlipEnum.COMPUTE_TAX_ERROR_MESSAGE
+					.getTextValue());
 			
 		} catch (IOException e) {
-			e.printStackTrace();
+			throw new InvalidInputDataException(GeneratePaySlipEnum.COMPUTE_TAX_ERROR_MESSAGE.getTextValue());
 		}
 		
 		return payslips;
 		
     }
-    
-    public void printPaySlips(List<Payslip> payslips, String outputFileName) {
+
+	/**
+	 * Method to calculate tax and create payslip by applying the tax rules (from taxcalculation.csv)
+	 * on the employee data 
+	 * 
+	 * @param listOfPayslips
+	 * @param - name of the csv file to which the payslips are to be written
+	 */
+    public void printPaySlips(List<Payslip> payslips, String outputFileName) 
+    		throws PayslipOutputWriterException {
     	
     	FileWriter fileWriter = null;
         try {
             fileWriter = new FileWriter(outputFileName);
-            fileWriter.append(FILE_HEADER.toString());
-            fileWriter.append(NEW_LINE_SEPARATOR);
+            fileWriter.append(GeneratePaySlipEnum.PAYSLIP_FILE_HEADER.getTextValue().toString());
+            fileWriter.append(GeneratePaySlipEnum.NEW_LINE_SEPARATOR.getTextValue());
             
         	for(Payslip paySlip : payslips) {
         		fileWriter.append(paySlip.getFullName());
-                fileWriter.append(COMMA_DELIMITER);
+                fileWriter.append(GeneratePaySlipEnum.COMMA_DELIMITER.getTextValue());
         		fileWriter.append(paySlip.getPayPeriod());
-                fileWriter.append(COMMA_DELIMITER);
+                fileWriter.append(GeneratePaySlipEnum.COMMA_DELIMITER.getTextValue());
         		fileWriter.append(new Integer(paySlip.getGrossIncome()).toString());
-                fileWriter.append(COMMA_DELIMITER);
+                fileWriter.append(GeneratePaySlipEnum.COMMA_DELIMITER.getTextValue());
         		fileWriter.append(new Integer(paySlip.getIncomeTax()).toString());
-                fileWriter.append(COMMA_DELIMITER);
+                fileWriter.append(GeneratePaySlipEnum.COMMA_DELIMITER.getTextValue());
         		fileWriter.append(new Double(paySlip.getNetIncome()).toString());
-                fileWriter.append(COMMA_DELIMITER);
+                fileWriter.append(GeneratePaySlipEnum.COMMA_DELIMITER.getTextValue());
         		fileWriter.append(new Integer(paySlip.getSprAnnuation()).toString());
-                fileWriter.append(NEW_LINE_SEPARATOR);
+                fileWriter.append(GeneratePaySlipEnum.NEW_LINE_SEPARATOR.getTextValue());
         	}
 
-            logger.info("CSV file was created successfully !!!");
+            logger.info(GeneratePaySlipEnum.PAYSLIP_CSV_SUCCESS_MESSAGE.getTextValue());
         } catch (Exception e) {
-            logger.error("Error in CsvFileWriter !!!");
-            e.printStackTrace();
+            throw new PayslipOutputWriterException(GeneratePaySlipEnum.PAYSLIP_CSV_ERROR_MESSAGE.getTextValue());
         } finally {
             try {
                 fileWriter.flush();
                 fileWriter.close();
-            } catch (IOException e) {
-                logger.error("Error while flushing/closing fileWriter !!!");
-                e.printStackTrace();
+            } catch (Exception e) {
+                throw new PayslipOutputWriterException(GeneratePaySlipEnum.PAYSLIP_CSV_FINALIZE_ERROR_MESSAGE.getTextValue());
             }
         }
     }
     
 }
-

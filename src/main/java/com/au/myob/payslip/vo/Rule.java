@@ -1,5 +1,11 @@
 package com.au.myob.payslip.vo;
 
+/**
+ * Rules Object
+ * @author Silas
+ *
+ */
+
 public class Rule {
 	
 	private int minimum_salary;

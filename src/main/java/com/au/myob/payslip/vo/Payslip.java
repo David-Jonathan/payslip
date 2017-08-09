@@ -1,5 +1,11 @@
 package com.au.myob.payslip.vo;
 
+/**
+ * Payslip Object
+ * @author Silas
+ *
+ */
+
 public class Payslip {
 	
 	String fullName;
